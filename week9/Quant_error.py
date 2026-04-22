@@ -22,7 +22,7 @@ def quantization_error ( BitWidth ) :
     print("quantization in : ", BitWidth, "bit")
     ################ WRITE YOUR OWN CODE ##################
     # 1. make scale factor for quantization
-    # Scale_factor = (max(data)-min(data)) / (2^Bitwidth)
+    # Scale_factor = (max(data)-min(data)) / (BitWidth)
     
 
     # 2. quantized data using scale factor
