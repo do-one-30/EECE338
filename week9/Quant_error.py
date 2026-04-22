@@ -23,18 +23,20 @@ def quantization_error ( BitWidth ) :
     ################ WRITE YOUR OWN CODE ##################
     # 1. make scale factor for quantization
     # Scale_factor = (max(data)-min(data)) / (2^Bitwidth)
-
+    
 
     # 2. quantized data using scale factor
     # Quantized value = round(data/Scale_factor) * Scale_factor
 
+
     # 3. find error caused by quantization
     # Error = SUM( |Quantized_value -data| ) 
+
     
     #######################################################
 
     ## ploting sine and cosine curve using matplotlb
-    print('Error for {0:1d} bit quantization {1:.2f}'.format(last_digit, Error))
+    print('Error for {0:1d} bit quantization {1:.2f}'.format(BitWidth, Error))
     y_q = Quantized_value
     plt.plot(x, y, x, y_q)
     plt.show()
